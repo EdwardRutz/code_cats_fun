@@ -1,0 +1,270 @@
+<! DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A novice's page for exploring and practicing HTML, CSS and Javascript.">
+	<meta name="robots" content="noindex, nofollow">
+	<title> CSS Notes</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+<header id="top">
+<h1>CSS NOTES</h1>
+
+	<nav>
+		<ul>
+			<li><a href="index.html"> HOME </a></li>
+			<li><a href="notes.html"> NOTES </a></li>
+			<li><a href="fun.html"> FUN </a></li>
+			<li><a href="videos.html"> VIDEO </a></li>
+			<li><a href="resources.html"> RESOURCES </a></li>
+		</ul>
+	</nav>
+
+</header>
+
+<section id="subMenu">
+	<ul>
+			<li><a href="#cssTips">CSS Tips &amp; Tricks</a></li>
+			<li><a href="#cssProperties">CSS Properties</a></li>
+			<li><a href="#cssSelectors">CSS Selectors</a></li>
+			<li><a href="#cssSyntax">CSS Syntax</a></li>
+			<li><a href="#cssFAQs">CSS FAQs</a></li>
+			<li><a href="glossary.html">Glossary</a></li>
+	</ul>
+</section>
+
+<br>
+
+<h2> CSS NOTES</h2>
+
+<p class="source">Source: TeamTreehouse, "Front-End Development Track"</p>
+
+	<ul class="definition">
+		
+		<li><strong> CLASS vs ID:</strong>   The difference between a CSS class and ID?  Classes are reused on the site, IDs are unique and are used only once. On the CSS page style Classes starting with a period (.className) and IDs start with a hashmark (#idName).  "Classes are used when you want to manipulate multiple elements at a time and id's are used when you want to manipulate a single element. You can have multiple classes but you can only have 1 id (Isaiah McGee)</li>
+		<ul>	
+			<li>"Much like student ID cards are distinct. No two students on campus will have the same student ID card. However, many students can and will share at least one Class with each other." For example: </li>
+			
+			<li>&lt; student id="jonathanSmith" class="biology" &gt;
+				<p>&lt; student id="maryJones" class="calculus" &gt;</p></li>
+			
+				<li><a href="https://css-tricks.com/the-difference-between-id-and-class/" target="_blank">Differences Between Class and IDs</a></li>
+
+				<li>IDs carry more weigth than classes because they refer to something very specific within the element.</li>
+
+				<li>Classes are used for global attributes, it is recommended to avoid using ID's, unless it is absolutely necessary.</li>
+
+				<li>It is good to keep functionality and presentation of  code separate, so use IDs for fragment identifiers and JavaScript hooks and use classes for your over-all styling. The benefits of this approach are that classes are more versatile because they can be reused, this makes your code more modular. </li> 
+
+				<li>Using IDs and classes for separate purposes avoids any potential specificity issues and makes your code easier to understand by another developer, which is important if you're working as part of a team.</li>
+		</ul>
+
+		<li><strong>Using IDs in Selectors:</strong> - Should we use IDs in Selectors? There are several opinions...</P>
+			<ul>
+				<li><a href="http://stackoverflow.com/questions/8279132/why-shouldnt-i-use-id-selectors-in-css" target="_blank">Why Shouldn't I Use ID Seletors in CSS?</a></li>
+				
+				<li><a href="http://screwlewse.com/2010/07/dont-use-id-selectors-in-css/" target="_blank">Don't Use ID Selectors in CSS</a></li>
+				
+				<li><a href="http://oli.jp/2011/ids/" target="_blank">Don't Use IDs in CSS Selectors</a></li>
+				
+				<li><a href="https://github.com/CSSLint/csslint/wiki/Disallow-ids-in-selectors" target="_blank">Disallow IDs in Selectors</a></li>
+				
+				<li><a href="https://softwareengineering.stackexchange.com/questions/271995/what-to-use-instead-of-ids-in-selectors-in-css" target="_blank">What to Use Instead of ID Selectors in CSS</a></li>
+			</ul>
+
+		<li>DESCENDENT SELECTORS:  CSS lets us target elements based on their relationship in the HTML document. We can combine selectors to create descendant selectors that target elements that are descendants of an element. This makes our selectors more specific.</li>
+			<ul>
+				<li>Descendant Selectors, or Combinators, describe the descendant of an element and can be used for styling elements that exist inside of other elements.</li>
+			</ul>
+
+		<li><strong>Google Fonts</strong> - A 3rd party font service from Google that provides a large library of fonts that are legitmately licensed. All of the fonts are available for free.</li>
+		
+		<li><strong>Inheritance</strong> - When several values are given, the most specific value will be applied.  The child style overights the parent style.</li>
+		
+		<li><strong>Remembering Top, Right, Bottom, Left Values</strong> - The values are ordered clockwise starting at the Top, then Right, then Bottom and finally Left (e.g. padding: 5px 0 0 0;) Remember to put a space between the values.</li>
+		
+		<li><strong>Moving Up Directories/Folders</strong> - using ".." will move up a directory.  For example, in the css dir move to img dir by typing "../img/phone.png". So we go up one to the root directory then follow the path to the img directory and phone.png.</li>
+
+		<li><strong>USE PERCENTAGES</strong> as values to define element size instead of using pixels.   It makes the website more fluid and responsive to different sizes of displays.  Percentages are relative units that will change based on the relative width of the browser. Fixed units like pixels stay the same size regardless of browser window size. </li>
+
+		<li><strong>DON'T REPEAT YOURSELF</strong> - Don't repeat CSS code.  Instead code once using a class and repeat the class.</li>
+</ul>
+	
+	<p><a href="#top">Back to Top &raquo;</a></p>
+	<br />
+<!--*************************************************
+CSS TIPS & TRICKS
+**************************************************-->
+
+<h2 id="cssTips" class="h2Bookmarks">CSS Tips &amp; Tricks</h2>
+
+	<ul>
+		<li><a href="https://css-tricks.com/id-your-body-for-greater-css-control-and-specificity/" target="_blank"> ID Your &lt;Body Tag&gt;</a></li>
+	</ul>
+
+	<p><a href="#top">Back to Top &raquo;</a></p>
+	<br />
+
+
+<!--*************************************************
+CSS PROPERTIES
+**************************************************-->
+
+
+<h2 id="cssProperties" class="h2Bookmarks">CSS PROPERTIES</h2>
+
+	<ul class="definition">
+	
+		<li> <strong>background-color</strong> - Sets the background color of an element. Accepts any CSS color unit.</li>
+		
+		<li><strong>background-image</strong> - Accepts an image path that applies the file to the background of an element. Background images repeat by defualt.  Use "no-repeat" for a single image without repitition.</li>
+		
+		<li><strong>background-repeat</strong>- Sets whether or not a background image should be repeated. By default, backgrounds will repeat.</li>
+		
+		<li><strong>border</strong> -  CSS shorthand property that allows for a visual outline or "border" to be applied to an element. Accepts a length unit to define the border-width, a keyword to define the border-style, and a color unit for the border-color.</li>
+
+		<li><strong>border-radius</strong> - Defines the roundness of a border corner. Accepts any CSS length unit. A value of 100% makes a square picture round (e.g. border-radius-100%;).</li>
+		
+		<li><strong>background-size</strong> - Sets the size of background images.</li>
+		
+		<li><strong>clear</strong> - The clear property specifies whether an element can be adjacent to floated elements or if it should be moved down and "clear" any floated elements.</li>
+		
+		<li><strong>color</strong>  - Sets the text color of an element. Accepts any CSS color unit.</li>
+
+		<li><strong>/* Comment */  </strong><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Comments">MDN: CSS Comments</a></li>
+
+		<li><strong>CSS DATA TYPES</strong> - a type of value used in CSS <a href="https://developer.mozilla.org/en-US/docs/tag/CSS%20Data%20Type">See MDN: CSS Data Types Info</a></li>
+
+		<li><strong>CSS UNITS FOR LENGTH</strong> - <a href="https://www.w3schools.com/cssref/css_units.asp">  See W3 Schools:  CSS Units of length.</a></li>
+		<ul>
+			<li><strong>Pixels</strong> - When we use pixel units, the size we define will always remain the same and will not scale, regardless of the browser window and size of the screen.</li>
+			<ul>
+				<li>Header length will take up 960px of the screen.</li>
+			</ul>
+		</ul>
+			<li>PERCENTAGES - are always relative to something else. When we use a percentage unit in CSS, the percentage value is measured relative to a parent element's length.  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage"> MDN: Percentage values</a></li>
+		
+		<li><strong>display</strong> - Sets whether an element should be rendered as a block element, inline element, or inline-block element. Inline-block displays list items horizontally is used to make a menu bar</li>
+		
+		<li><strong>EM</strong> - A unit measuring font size and is relative to the font size of the element. One em = 16 pixels. Browser font size is typically 16 pixels by default. Example:  "font-size: 1.75em;" makes the font 0.75 larger than the default font of 16px.</li>
+		
+		<li><strong>float</strong> - Allows an element to be taken out of the normal flow and placed to the left or right of its container. Text and other inline elements will wrap around it.</li>
+		
+		<li><strong>font-family</strong> - Defines which fonts should be applied to text.</li>
+		
+		<li> <strong>font-size</strong> - Sets the size of text in either relative or absolute units.</li>
+		
+		<li><strong>font-weight</strong> - Sets the visual weight of text, which is more commonly known as "bold" as is the case in word processors.</li>
+		
+		<li><strong>list-style</strong> - Sets the style of numbers or bullet points for ordered and unordered lists. The marks can also be removed entirely with the value "none".</li>
+		
+		<li><strong>line-height</strong> - Set the amount of space between each line of text. Accepts any CSS length unit.</li>
+		
+		<li> <strong>margin</strong>  - Sets the space around the exterior four sides of an element. Accepts any CSS length unit.</li>
+		
+		<li><strong>margin-top and margin-bottom</strong>- Create space around an elemnt like a list item or paragraph. Typically, margin-top is 0, and margin-bottom is a value (e.g. "p {margin-top: 0em;margin-bottom: 2em;}").</li>
+		
+		<li> <strong>max-width</strong>  - Sets the maximum width of an element. Accepts any CSS length unit.</li>
+
+		<li> <strong>padding</strong>  - Sets the space on the interior four sides of an element. Accepts any CSS length unit.</li>
+
+	
+		<li><strong>text-align</strong>  - Sets the justification of text, similar to a word processor. For example, text can be set to be aligned to the left, right, or center.</li>
+		
+		<li> <strong>text-decoration</strong>  - Primarily used to add or remove underlines from text.  </li>
+	</ul>
+	
+	<p><a href="#top">Back to Top &raquo;</a></p>
+	<br />
+
+<!--*************************************************
+CSS SELECTORS
+**************************************************-->
+
+	
+<h2 id="cssSelectors" class="h2Bookmarks">CSS SELECTORS</h2>
+		
+	<ul class="definition">	
+		<li><strong>Class Selector</strong> - Selects any HTML element that matches the class and applies a property to them (e.g ".intro {background-color: yellow;}"). <a href="https://www.w3schools.com/cssref/sel_class.asp">W3 Schools on CSS Class</a></li>
+			
+			<p> In HTML:</p>
+				<code>
+					&lt;img src="img/photo1.png" class="reg_img"&gt;&lt; /a &gt;
+				</code>
+			<br />
+			<p> In CSS:</p>
+				<code> .reg_img { <br />
+						&nbsp; margin: 0 30px;
+					<br /> }
+				</code>
+		
+		<li><strong>Pseudo-Class</strong>  - Dynamic selectors that change based on user interaction with the browser, such as hovering over a link, for example.</li>
+			<ul>
+				<li>:link - targets links that have not been visited by the user</li>
+				<li>:visited pseudo-class targets links that have been visited –– or clicked –– by the user</li>
+				<li> :hover pseudo-class targets an element when a user hovers over it.</li>
+				<li>:active pseudo-class gets applied when an element is in an active state.</li>
+				<li>:focus pseudo-class is only applied to interactive elements like links, buttons and form elements. The styles are applied as soon as the element receives focus</li>
+			</ul>
+
+		<li><strong>:nth-child(An+B)</strong> - The nth-child pseudo-class matches A(n)+B-1 siblings in the document tree. The A value that precedes n is required. By itself, this will match every "nth" element in a group. Both A and B must be integers. For example, :nth-child(3n+1) will select every 3rd item plus 1. In other words, this will select the 1st item, 4th item, 7th item, 10th item, and so on.</li>
+
+	</ul>
+	
+	<p><a href="#top">Back to Top &raquo;</a></p>
+	<br />
+	
+
+<!--*************************************************
+CSS SYNTAX
+**************************************************-->
+
+
+<h2 id="cssSyntax" class="h2Bookmarks">CSS SYNTAX</h2>
+
+	<ul>
+		<li><strong>@media</strong> - Media queries use the @media CSS rule to define conditions of the browser medium. In other words, it allows for CSS styling to only be included if certain conditions are met, such as a specific browser width.  (e.g. "@media screen and (min-width: 480px) {};" and "@media screen and (min-width: 660px);")</li>
+	</ul>
+
+	<p><a href="#top">Back to Top &raquo;</a></p>
+	<br />
+
+<h2 id="cssFAQs" class="h2Bookmarks">CSS FAQs</h2>
+
+<ul>
+	<li><a href="#id-class">Can an element have both an id and a class?</a></li>
+</ul>
+
+<br>
+
+<p id="id-class"><strong>Can an element have both an id and a class?</strong></p>
+<p>Yes, an element can have one ID (which must be unique!) and multiple classes at the same time. To have multiple classes, use a space between them, here's an example:</p>
+	<p><pre><code>&lt;div id="myID" class="class1 class2 class3"&gt;Content&lt;/div&gt;
+	</code></pre></p>
+
+	<p><a href="#top">Back to Top &raquo;</a></p>
+
+	<br />
+
+
+
+<footer>
+		<a href="http://referrals.trhou.se/edwardr" target="_blank"><img src="img/treehouse.png" alt="Team Treahouse Logo"></a>
+		
+		<a href="http://twitter.com/bignFluffyCat" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter logo"></a>
+		
+		<a href="http://www.facebook.com/edwardrz" target="_blank"><img src="img/facebook-wrap.png" alt="SetApp logo"></a>
+
+		<a href="https://go.setapp.com/invite/9332bc61" target="_blank"><img src="img/setapp2.png" alt="SetApp logo"></a>
+		<p><a href="https://go.setapp.com/invite/9332bc61" target="_blank">50% Off Treehouse Software Training</a></p>
+
+		<br>
+		<p> &copy; 2017 Big Fluffy Cat Productions</p>
+	</footer>
+	
+</body>

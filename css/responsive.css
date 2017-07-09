@@ -1,0 +1,38 @@
+	/* Media query break points.
+	Standard size for landscape mode in smart phones is 480px.  Start with the smallest size and move to larger size.*/
+
+@media screen and (min-width: 480px) {
+
+	/********************************************
+	TWO COLUMN LAYOUT
+	*********************************************/
+
+	#primary {
+		width: 50%;
+		float: left;
+		}
+
+	#secondary {
+		width: 40%;
+		float: right;
+		}
+
+
+	/********************************************
+	PAGE: PORTFOLIO;
+	*********************************************/
+
+	#gallery li {
+		width: 28.3333%;
+		}
+
+	#gallery li:nth-child(4n)  {
+		/* or li:nth-childs(3n+1) */ 
+		clear: left;
+		}
+}
+
+@media screen and (min-width: 660px) {
+	
+	}
+

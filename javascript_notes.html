@@ -1,0 +1,114 @@
+<! DOCTYPE HTML>
+<html lang="en"
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="A novice's page for exploring and practicing HTML, CSS and Javascript.">
+	<meta name="robots" content="noindex, nofollow">
+	<title> JavaScript Notes </title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">	
+	<link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+<header>
+<h1>JAVASCRIPT NOTES</h1>
+	<nav> 
+		<ul>
+			<li><a href="index.html"> HOME </a></li>
+			<li><a href="notes.html"> NOTES </a></li>
+			<li><a href="fun.html"> FUN </a></li>
+			<li><a href="videos.html"> VIDEO </a></li>
+			<li><a href="resources.html"> RESOURCES </a></li>
+		</ul>
+	</nav>
+</header>
+
+<ul class="definition">
+	<li>JavaScript is case sensitive.</li>
+
+	<li>ESCAPING THE QUOTES:  Sometimes strings contain quotes that are not part of the string. This requires using a back-slash (\) to escape the quotes so the code is clear.
+	<pre><code>var phrase = "He said \"no"\ and left the room."</code></pre>
+
+	<li>INCREMENT OPERATOR: Shorthand for adding to a variable:  To quickly add 10 to the variable "score" use += (or -=  /=  *=).  No spaces between operators.
+	<pre><code>score += 10; </code></pre></li>
+
+	<li>Shorthand for adding 1 to a variable:
+		<pre><code>a++;</code></pre>  
+		Trivia: this is where the name for C++ came from, C + 1, the next version.
+
+		or to subtract 1 from a varialble...
+		<pre><code>a--;</code></pre></li>
+
+		<li>COMMENTS start with //. <pre><code>// This is a comment</code></pre>
+
+		or use /*  */ to comment out multiple lines.</li>
+
+	<li>ASSIGNMENT, EQUALITY, STRICT EQUALITY (=, ==, ===):  
+		<pre>
+		= assignment
+		== equlity
+		=== strict equlity
+		</pre>
+		<ul>
+			<li>A single equal sign (=) is a command assigning and setting a value to a variable. A double equals (a == 1) is the equality operator and checks a value. Inequality is checked by an exclamation and equal sign (a != 1).</li>
+
+			<li>Double equals checks to see if the values are the same but is flexible with the type of data. For instance, 123 == "123" will show the number 123 is the same value as the string "123."  Same numbers but different type.</li>
+		
+			<li>A common mistake is to use Assignment (=) instead of Equality (==). Assignment is a command, equality is asking if one thing is equal to another.
+			<pre><code>
+				var a = 5; //Assigning the value of 5 to variable a
+				var b = 10;
+
+				if (a==b) { //Checking if a is equal to b, not a = b
+				} </code></pre></li>
+
+			<li>THE STRICT EQUALITY OPERATOR (===):  Triple equals checks to see if the type and value are exactly the same ( 123 is not equal to the string "123"). It is a good habit to use triple equals when checking equality.</li>
+		</ul>
+
+	<li>CURLY BRACKETS { } groups together a section of code or code block. Usually the opening curly brace is on the same line as the keyword, then the code is written indented on the next line, then the closing curly brace on the following line.
+		<pre><code>
+		if (a = b) {
+			alert("Yes, a is less than b");
+		} </code></pre></li>
+
+	<li>NESTING IF STATEMENTS:  avoid going more than three layers of nesting "if" statements because code becomes difficult to read and their are more effective methods to  use such as functions.</li>
+	<li>LOGICAL AND/OR:  Instead of "and" use "&amp;&amp;".  Instead of "or" use the vertical bar or pipe symbol "||".</li>
+
+	<li>SWITCH STATEMENT:  Is a good substitute for multiple "if/then/else" statements</li>
+	<pre><code>
+var grade = "Premium"
+
+switch (grade) {
+	case "Regular":
+			alert("Cost is $3.15");
+			break;
+	case "Premium":
+			alert("Cost is $3.35");	
+			break;
+	case "Diesel":
+			alert("Cost is $3.47");	
+			break;
+	default:
+			alert("That is not a valid grade");
+}
+	</code></pre>
+</ul>
+
+<footer>
+		<a href="http://referrals.trhou.se/edwardr" target="_blank"><img src="img/treehouse.png" alt="Team Treahouse Logo"></a>
+		
+		<a href="http://twitter.com/bignFluffyCat" target="_blank"><img src="img/twitter-wrap.png" alt="Twitter logo"></a>
+		
+		<a href="http://www.facebook.com/edwardrz" target="_blank"><img src="img/facebook-wrap.png" alt="SetApp logo"></a>
+
+		<a href="https://go.setapp.com/invite/9332bc61" target="_blank"><img src="img/setapp2.png" alt="SetApp logo"></a>
+		<p><a href="https://go.setapp.com/invite/9332bc61" target="_blank">50% Off Treehouse Software Training</a></p>
+
+		<p></p><p></p><p>
+		<p> &copy; 2017 Big Fluffy Cat Productions</p>
+	</footer>
+	
+</body>

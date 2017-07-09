@@ -1,0 +1,431 @@
+/********************************************
+UNIVERSAL
+*********************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+/********************************************
+GENERAL
+*********************************************/
+body {
+	font-family: Helvetica, sans-serif;
+}
+/*
+.main-header {
+  gradient: #FF8200, firebrick;
+
+  padding-top: 170px;
+  height: 850px;
+  background: #ffa949 url('../img/mountains.jpg') no-repeat center;
+  background-size: cover
+  background-image: radial-gradient(circle at top right, #ffa949, firebrick);
+ */
+}
+p {
+	margin: 1rem 2rem 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+.definition li {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+#checkbox li {
+	list-style: none;
+}
+/* R&D creating orange li bullets.  This adds them to the nav menu, find a way to prevent this.
+ul {
+	list-style: none;
+}
+ #orangeBullet li::before {
+	content: "• ";
+	color: #FF8200;
+} */
+
+/********************************************
+HEADING
+*********************************************/
+
+header{
+	float: left;
+	margin: 0 0 2rem 0;
+	padding: 5px 0 0 0;
+	width: 100%;
+}
+
+#logo {
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	font-family: arial, sans-serif;
+	margin: 1rem 0;
+	font-size: 2rem;
+	font-weight:bolder;
+	line-height: 0.8rem;
+	color: black;
+}
+
+h2 {
+	font-size: 1.20rem;
+	margin: 1.5rem 1.5rem 0;
+	font-weight: bolder;
+}
+
+.h2Bookmarks {
+	color: fff;
+	font-weight: bold;
+	background-color: #58595B;
+	margin: 1.5rem 1.5rem 0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+}
+
+
+#subtitle {
+	text-align: center;
+	font-style: italic;
+}
+
+/* Caption for main image on index.html */
+#caption {
+	text-align: center;
+	font-size: 0.75em;
+}
+
+.source {
+	font-size: 0.75em;
+}
+
+
+/********************************************
+NAVIGATION
+*********************************************/
+nav {
+	text-align: center;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}
+
+nav ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	font-size: 1em;
+}
+
+nav li {
+	display: inline;
+	padding: 0 1em 0 1em;
+	margin-right: 0.5em;
+}
+
+nav a {
+	color: #fff;
+}
+
+/* nav background */
+nav {
+	background: #58595B; /* 58595B UT Smokey   OLD: #6495ED, cornflowerblue*/
+	}
+
+/*
+nav a:visited {
+	color: #5CC9F5;  Maya Blue 
+} */
+
+/* selected nav link */
+nav a.selected  {
+	color: #FF8200; /* TN Orange*/
+}
+
+nav a:hover {
+	color: #FF8200; /* TN Orange*/
+	text-decoration: underline;
+}
+
+a:focus {
+	color: white;
+	background-color: #FF8200;
+}
+
+
+/********************************************
+NAVIGATION:  SUB-MENU
+*********************************************/
+/*
+#subMenu {
+	text-align: left;
+	padding: 10px 0;
+	margin: 20px 0 0;
+}   */
+
+#subMenu ul {
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	font-size: 1em;
+}
+
+#subMenu li {
+	display: inline;
+	padding: 0 1em 0 1em;
+	margin-right: 0.5em;
+}
+
+
+/********************************************
+COLUMNS
+*********************************************/
+div {
+	column-count: 3;
+	column-gap: 20px;
+	column-width: 100px; 
+	/* column-rule: 2px solid black; */
+}
+
+
+.left {
+	text-align: left;
+	float: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+	float: right;
+}
+
+
+
+/********************************************
+FOOTER
+*********************************************/
+
+footer {
+	font-size: 1em;
+	text-align: center;
+	clear: both;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #5CC9F5;  /* Maya Blue */
+	background: #58595B; /* 58595B UT Smokey */
+	border-bottom: 20px solid #ff8200;
+	height: 15em;
+	
+	
+
+	/*  Keep footer on the bottom
+	position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px; 
+
+/* .stayBottom {
+	position: absolute;
+	bottom: 0; 
+	width: 100%;
+	height: 100px;  Height of the footer */
+}
+
+}
+footer ul {
+	list-style: none;
+	margin: 0 20px;
+	padding: 0;
+	font-size: 1em;
+}
+
+footer li {
+	display: block;
+	padding: 0 0.5em 0 0.5em;
+}
+
+#socialIcons li {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/********************************************
+IMAGES
+*********************************************/
+
+.main_img {  
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15%;
+}
+
+.reg_img {
+	margin: 0 30px;
+}
+
+.contact_img {  
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 100%;
+}
+
+
+/********************************************
+PAGE: GALLERY
+*********************************************/
+
+#wrapper {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+	/* background: #58595B;   /* 58595B UT Smokey */
+} 
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#gallery li {
+	float: left;
+	width: 45%;
+	margin: 2.5%;
+	/* background-color: #58595B; /* 58595B UT Smokey */
+}
+
+#gallery li a p {
+	margin: 0;
+	padding: 5%;
+	font-size: 0.75em;
+	/* text-align: center; */
+}
+
+
+/********************************************
+PAGE:  ABOUT
+*********************************************/
+
+.profile-photo {
+	display: block;
+	max-width: 150px;
+	margin-left: auto;
+	margin-right: auto;
+	/*margin: 20px 50px 30px;*/
+	border-radius: 100%; /* Makes the square picture a round circle.*/
+}
+
+
+
+/********************************************
+PAGE:  CONTACT
+*********************************************/
+
+.contact-info {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.contact-info a {
+	display: block; /*Each anchor item and image will take up space.*/
+	min-height: 20px;
+	background-repeat: no-repeat; /*background images repeat by default*/
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px;
+}
+
+.contact-info li.phone a {
+	background-image: url('../img/phone.png');
+}
+
+.contact-info li.mail a {
+	background-image: url('../img/mail.png');
+}
+
+.contact-info li.twitter a {
+	background-image: url('../img/twitter.png');
+}
+
+
+/********************************************
+PAGE:  CHARACTER CODES
+*********************************************/
+.charcodes {
+	position: center;
+	margin-left: 30%;
+}
+
+
+/* <table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 2px; display: none; top: 3px; position: absolute; left: -1px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table>
+*/
+
+/********************************************
+COLORS
+*********************************************/
+
+
+
+/* site body */
+body{
+	/*background-color: orange;*/
+	color: black;
+}
+
+/* header with orange background. */
+header{
+	background: linear-gradient(#FF8200, firebrick);
+	border-color: #F78AE0;
+}
+
+/* links */
+a {
+	color: #ff8200;
+}
+
+.checkBox {
+	margin: 0 auto;
+	padding: 0 5%;
+}
+
+
+
+/********************************************
+COLOR PALLETTE: UT COLORS
+*********************************************/
+/* Tennessee Orange
+CMYK 0 50 100 0
+HEX #FF8200
+RGB 255 130 0
+PMS 151
+
+White
+CMYK 0 0 0 0
+HEX FFFFFF
+RGB 255 255 255
+PMS N/A
+
+Smokey
+CMYK 0 0 0 80
+HEX #58595B
+RGB 88 89 91
+PMS COOL GRAY 11 */
+
